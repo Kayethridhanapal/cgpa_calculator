@@ -1,0 +1,184 @@
+ <html>
+    <head>
+        <meta name="viewport" content="width-device-width,initial scale=1">
+        <style>
+            h3{text-align:center 7;padding-top: 5px;font-size: 20px;font-style: italic;font-family: 'Times New Roman', Times, serif;font-weight: 300;}
+            p{text-align: left;padding-left: 15px;font-size: 20px;font-style: italic;font-family: 'Times New Roman', Times, serif;font-weight: 300;}
+        </style>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body style="background-color:cadetblue;font-weight: 600;font-style: normal;">
+         <div class="container-fluid">
+        <h2 style="color:black;text-align: center;font-style: oblique;background-color: #F8E9A1;"><b>CGPA CALCULATOR</b></h2>
+        <form action="#" method="post" class="container-fluid form-inline">
+        
+        <div class="row">
+            <div class="col"><label for="name" class="form-label">Enter Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="enter name" name="name"></div>
+            <div class="col"><label for="rollno" class="form-label">Enter rollno:</label>
+                <input type="text" class="form-control" id="rollno" placeholder="enter rollno" name="rollno"></div>
+            <div class="col"><label for="dept" class="form-label">Enter deptname:</label>
+                <input type="text" class="form-control" id="dept" placeholder="enter dept" name="dept"></div>
+        </div>
+        <div class="row">
+            <div class="col"><label for="sem1" class="form-label">Enter 1st sem gpa:</label>
+                <input type="text" class="form-control" id="sem1" placeholder="enter gpa" name="sem1"></div>
+            <div class="col"><label for="sem2" class="form-label">Enter 2nd sem gpa:</label>
+                <input type="text" class="form-control" id="sem2" placeholder="enter gpa" name="sem2"></div>
+        </div>
+        <div class="row">
+            <div class="col"><label for="a3" class="form-label">Enter course Name:</label>
+                <input type="text" class="form-control" id="a3" placeholder="enter course name" name="name"></div>
+            <div class="col"><label for="a1" class="form-label">Enter grade points:</label>
+                <input type="text" class="form-control" id="a1" placeholder="enter grade points" name="rollno"></div>
+            <div class="col"><label for="a2" class="form-label">Enter credits :</label>
+                    <input type="text" class="form-control" id="a2" placeholder="enter credits" name="name"></div>
+        </div>
+        <div class="row">
+            <div class="col"><label for="b3" class="form-label">Enter course Name:</label>
+                <input type="text" class="form-control" id="b3" placeholder="enter course name" name="name"></div>
+            <div class="col"><label for="b1" class="form-label">Enter grade points:</label>
+                <input type="text" class="form-control" id="b1" placeholder="enter grade points" name="rollno"></div>
+            <div class="col"><label for="b2" class="form-label">Enter credits :</label>
+                    <input type="text" class="form-control" id="b2" placeholder="enter credits" name="name"></div>
+        </div>
+        <div class="row">
+            <div class="col"><label for="c3" class="form-label">Enter course Name:</label>
+                <input type="text" class="form-control" id="c3" placeholder="enter course name" name="name"></div>
+            <div class="col"><label for="c1" class="form-label">Enter grade points:</label>
+                <input type="text" class="form-control" id="c1" placeholder="enter grade points" name="rollno"></div>
+            <div class="col"><label for="c2" class="form-label">Enter credits :</label>
+                    <input type="text" class="form-control" id="c2" placeholder="enter credits" name="name"></div>
+        </div>
+        <div class="row">
+            <div class="col"><label for="d3" class="form-label">Enter course Name:</label>
+                <input type="text" class="form-control" id="d3" placeholder="enter course name" name="name"></div>
+            <div class="col"><label for="d1" class="form-label">Enter grade points:</label>
+                <input type="text" class="form-control" id="d1" placeholder="enter grade points" name="rollno"></div>
+            <div class="col"><label for="d2" class="form-label">Enter credits :</label>
+                    <input type="text" class="form-control" id="d2" placeholder="enter credits" name="name"></div>
+        </div>
+        <div class="row">
+            <div class="col"><label for="e3" class="form-label">Enter course Name:</label>
+                <input type="text" class="form-control" id="e3" placeholder="enter course name" name="name"></div>
+            <div class="col"><label for="e1" class="form-label">Enter grade points:</label>
+                <input type="text" class="form-control" id="e1" placeholder="enter grade points" name="rollno"></div>
+            <div class="col"><label for="e2" class="form-label">Enter credits :</label>
+                    <input type="text" class="form-control" id="e2" placeholder="enter credits" name="name"></div>
+        </div><br>
+            <input type="button" value=" Calculate CGPA" onclick="cgpa()">
+        </form>
+     </div>
+     <div class="row " >
+         <div class="col-md-3"></div>
+        <div class="col-md-6">
+    <table class="table">
+        <thead class="table-danger">
+             <tr>
+                <td><b>Candidate Name :</b><span id="demo"></span></td>
+                <td><b>Rollnumber :</b><span id="demo1"></span></td>
+                <td><b>Department :</b> <span id="demo2"></span></td> 
+            </tr>
+          <tr>
+            <th>Sno</th>
+            <th>Course name</th>
+            <th>Credits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-secondary">
+            <td>1</td>
+            <td><p id="demo6"></p></td>
+            <td><p id="demo11"></p></td>
+          </tr>      
+          <tr class="table-primary">
+            <td>2</td>
+            <td><p id="demo7"></p></td>
+            <td><p id="demo12"></p></td>
+          </tr>
+          <tr class="table-success">
+            <td>3</td>
+            <td><p id="demo8"></p></td>
+            <td><p id="demo13"></p></td>
+          </tr>
+          <tr class="table-primary">
+            <td>4</td>
+            <td><p id="demo9"></p></td>
+            <td><p id="demo14"></p></td>
+          </tr>
+          <tr class="table-success">
+            <td>5</td>
+            <td><P id="demo10"></p></td>
+            <td><p id="demo15"></p></td>
+          </tr>
+          <tr class="table-danger">
+            <td><b>Total grade points :</b><span id="demo3"></span></td>
+            <td><b>Total credits :</b><span id="demo4"></span></td>
+            <td><b>CGPA :</b><span id="demo5"></span></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-3"></div>
+     </div>
+     <script type="text/javascript">
+        function cgpa()
+        {
+            var a1=document.getElementById("a1").value;
+            var a2=document.getElementById("a2").value;
+            var b1=document.getElementById("b1").value;
+            var b2=document.getElementById("b2").value;
+            var c1=document.getElementById("c1").value;
+            var c2=document.getElementById("c2").value;
+            var d1=document.getElementById("d1").value;
+            var d2=document.getElementById("d2").value;
+            var e1=document.getElementById("e1").value;
+            var e2=document.getElementById("e2").value;
+            var gpa1 = document.getElementById("sem1").value;
+            var gpa2 = document.getElementById("sem2").value;
+            var NAME = document.getElementById("name").value;
+            var ROLLNO = document.getElementById("rollno").value;
+            var DEPT = document.getElementById("dept").value;
+            var co1 = document.getElementById("a3").value;
+            var co2 = document.getElementById("b3").value;
+            var co3 = document.getElementById("c3").value;
+            var co4 = document.getElementById("d3").value;
+            var co5 = document.getElementById("e3").value;
+            var t1=parseInt(a1)*parseInt(a2);
+            var t2=parseInt(b1)*parseInt(b2);
+            var t3=parseInt(c1)*parseInt(c2);
+            var t4=parseInt(d1)*parseInt(d2);
+            var t5=parseInt(e1)*parseInt(e2);
+            var aa1=parseInt(a1);
+            var bb1=parseInt(b1);
+            var cc1=parseInt(c1);
+            var dd1=parseInt(d1);
+            var ee1=parseInt(e1);
+            var gp=t1+t2+t3+t4+t5;
+            var tc=parseInt(a2)+parseInt(b2)+parseInt(c2)+parseInt(d2)+parseInt(e2);
+            var GPA=gp/tc;
+            var cgpa= (parseInt(gpa1)+parseInt(gpa2)+parseInt(GPA))/3;
+            document.getElementById("demo").innerHTML =  NAME;
+            document.getElementById("demo1").innerHTML = ROLLNO;
+            document.getElementById("demo2").innerHTML = DEPT;
+            document.getElementById("demo3").innerHTML=  + gp;
+            document.getElementById("demo4").innerHTML= + tc;
+            document.getElementById("demo5").innerHTML= + cgpa.toFixed(2);
+            document.getElementById("demo6").innerHTML =  co1;
+            document.getElementById("demo7").innerHTML =  co2;
+            document.getElementById("demo8").innerHTML =  co3;
+            document.getElementById("demo9").innerHTML =  co4;
+            document.getElementById("demo10").innerHTML =  co5;
+            document.getElementById("demo11").innerHTML =  +aa1;
+            document.getElementById("demo12").innerHTML =  +bb1;
+            document.getElementById("demo13").innerHTML =  +cc1;
+            document.getElementById("demo14").innerHTML =  +dd1;
+             document.getElementById("demo15").innerHTML =  +ee1;
+             
+        }
+
+    </script>
+    </div>
+    </body>   
+</html>
